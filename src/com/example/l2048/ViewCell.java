@@ -48,50 +48,6 @@ public class ViewCell extends View {
 	}
 	//画背景和数字
 	public void onDrawNum(int number){
-//		switch(number){
-//		case 0:
-//			setBackgroundResource(R.drawable.zero);
-//			break;
-//		case 2:
-//			setBackgroundResource(R.drawable._1x);
-//			break;
-//		case 4:
-//			setBackgroundResource(R.drawable._2x);
-//			break;
-//		case 8:
-//			setBackgroundResource(R.drawable._3x);
-//			break;
-//		case 16:
-//			setBackgroundResource(R.drawable._4x);
-//			break;
-//		case 32:
-//			setBackgroundResource(R.drawable._5x);
-//			break;
-//		case 64:
-//			setBackgroundResource(R.drawable._1y);
-//			break;
-//		case 128:
-//			setBackgroundResource(R.drawable._2y);
-//			break;
-//		case 256:
-//			setBackgroundResource(R.drawable._3y);
-//			break;
-//		case 512:
-//			setBackgroundResource(R.drawable._4y);
-//			break;
-//		case 1024:
-//			setBackgroundResource(R.drawable._5y);
-//			break;
-//		case 2048:
-//			setBackgroundResource(R.drawable.sun);
-//			break;
-//		default:
-//			setBackgroundResource(R.drawable.sun);
-//				break;
-//		}
-//		onDrawBorder(canvas);
-
-		
 		String bgcolor;
 		switch(number){
 		case 0:
