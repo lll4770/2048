@@ -37,9 +37,8 @@ public class MainActivity extends Activity implements OnGestureListener {
 	private LinearLayout centerlayout;
 	private List<ViewCell> lists = new ArrayList<ViewCell>();
 	private int[][] arrays = new int[4][4];
-	private Random random = new Random();//
+	private Random random = new Random();
 	private GestureDetector gd;
-//	private int testnumber=1;//测试数字方格分布情况
 	private boolean flag_move = false;
 	private TextView tv_currenScore;
 	private TextView tv_bestScore;
@@ -150,13 +149,10 @@ public class MainActivity extends Activity implements OnGestureListener {
 	private View getRowLayout() {
 		LinearLayout rowLayout = new LinearLayout(this);
 		rowLayout.setOrientation(LinearLayout.HORIZONTAL);
-//		rowLayout.setBackgroundColor(Color.GRAY);
 		for(int i=0;i<4;i++){
 			ViewCell viewcell = new ViewCell(this,iwidth,iheight);
 			rowLayout.addView(viewcell);
-			//测试数字方格排列情况
-//			viewcell.setNumber((int) Math.pow(2, testnumber));
-//			testnumber++;
+			
 			lists.add(viewcell);
 		}
 		return rowLayout;
@@ -228,16 +224,12 @@ public class MainActivity extends Activity implements OnGestureListener {
 
 		if(X>FLING_Min_DISTANCE&&Math.abs(velocityX)>Math.abs(velocityY)){
 			toRight();
-//			Toast.makeText(this, "右", 0).show();
 		}else if(X<-FLING_Min_DISTANCE&&Math.abs(velocityX)>Math.abs(velocityY)){
 			toLeft();
-//			Toast.makeText(this, "左", 0).show();
 		}else if(Y>FLING_Min_DISTANCE&&Math.abs(velocityX)<Math.abs(velocityY)){
 			toDown();
-//			Toast.makeText(this, "下", 0).show();
 		}else if(Y<-FLING_Min_DISTANCE&&Math.abs(velocityX)<Math.abs(velocityY)){
 			toUp();
-//			Toast.makeText(this, "上", 0).show();
 		}
 		return false;
 	}
