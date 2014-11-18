@@ -23,6 +23,7 @@ public class ViewCell extends View {
 		r.inset(2, 2);
 		
 	}
+	
 	public void setNumber(int number){
 		onDrawNum(number);
 		this.number=number;
